@@ -2,13 +2,13 @@ import React, { useContext, useEffect, useReducer }  from "react";
 import reducer from "./Reducer";
 const AppCotext = React.createContext();
 const AppProvider = ({children}) =>{
-  const API ="https://thapareactapi.up.railway.app";
+  // const API ="https://thapareactapi.up.railway.app";
 
 
   const initialstate={
   name :"",
   Image:"",
-  srvices:[],
+  // srvices:[],
   };
 const dataupdateHome =()=>{
 
@@ -51,11 +51,11 @@ const dataupdateAbout =()=>{
   }; 
 
 //call api
-useEffect(()=>{
+// useEffect(()=>{
   
-   getServices(API);  
+//    getServices(API);  
 
-},[]);
+// },[]);
 
 
   return <AppCotext.Provider value={{...state,dataupdateHome,dataupdateAbout }}>{children}</AppCotext.Provider>;
