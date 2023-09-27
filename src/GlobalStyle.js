@@ -33,8 +33,12 @@ h3
 {
     
     color:${({theme})=>theme.colors.heading};
-    font-size:4rem;
+    font-size:2rem;
     font-weight:400;
+
+}
+.shadow_data{
+   box-shadow:2px 2px 8px 8px  rgb(113, 119, 200); 
 
 }
 p
