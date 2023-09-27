@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react'
 import HeroSection from './components/HeroSection';
 import { UseGlobalContext } from './Context';
+import Services from './Services';
+import Contact from './Contact';
 
 const Home = () => {
   const {dataupdateHome}= UseGlobalContext();
@@ -12,7 +14,13 @@ const Home = () => {
   //   };
     
 
-  return <HeroSection/>;// {...data}
+  return <> 
+   <HeroSection/>
+   <Services/>
+   <Contact/>
+  
+  
+  </>;// {...data}
     
   
 }

@@ -14,6 +14,7 @@ import Footer from './components/Footer';
 import { ThemeProvider } from 'styled-components';
 import { GlobalStyle } from './GlobalStyle';
 import ErrorData from './ErrorData';
+import GoToTop from './components/GoToTop';
 
 function App() {
   const theme=
@@ -55,6 +56,7 @@ mediea:
            <Route path='/contact' element={<Contact/>}/>
            <Route path='*' element={<ErrorData/>}/>
           </Routes>
+          <GoToTop/>
           <Footer/>  
         </Router>
         </ThemeProvider>
