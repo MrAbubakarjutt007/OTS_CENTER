@@ -34,6 +34,7 @@ const Navbar = () => {
 
 
     return (
+        
         <Nav>
         <div className='nevIcon'>
             <ul className='Navbar-list'>
@@ -52,6 +53,7 @@ const Navbar = () => {
             </ul>
         </div>
         </Nav>
+        
     )
 }
 export default Navbar;

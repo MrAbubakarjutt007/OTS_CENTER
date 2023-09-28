@@ -1,12 +1,27 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import styled from 'styled-components';
 import { FaArrowUp } from "react-icons/fa";
 
 const GoToTop = () => {
+  const [VisableData, SetVisableData] = useState(false);
   const GoToBotton =()=>{
  
     window.scrollTo({top:0,left:0, behavior:'smooth'});
   }
+  const listenToSaroll =()=>{
+ let heightToHidden = 250;
+   const winscroll =document.body.scrollTop ||document.documentElement.scrollTop;
+       if(winscroll>heightToHidden){
+        SetVisableData(true);
+       }else{
+        SetVisableData(false);
+        } 
+
+  };
+  useEffect(()=>{
+        window.addEventListener("scroll",listenToSaroll);
+        return()=>window.removeEventListener("scroll",listenToSaroll);
+  },[]);
   const Wrapper =styled.section`
       diplay:flex;
       justify-content:center;

@@ -1,3 +1,21 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
 Disallow:
+//<Nav>
+        <div className='nevIcon'>
+            <ul className='Navbar-list'>
+                <li>
+                    <NavLink  className="navbar-Link" to="/">Home </NavLink>
+                </li>
+                <li>
+                    <NavLink className="navbar-Link" to="/about">about </NavLink>
+                </li>
+                <li>
+                    <NavLink className="navbar-Link" to="/service">services</NavLink>
+                </li>
+                <li>
+                    <NavLink className="navbar-Link" to="/contact">Contact</NavLink>
+                </li>
+            </ul>
+        </div>
+        </Nav>
