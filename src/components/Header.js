@@ -13,7 +13,7 @@ const Header = () => {
   `;
   return (
     <MainHeader>
-       icon
+       <img className='mb-3' src="/images/bookicon.png" alt="bookicon" width={100}/>
        <Navbar/>
    </MainHeader>
     
